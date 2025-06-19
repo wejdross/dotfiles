@@ -38,5 +38,7 @@ export SAVEHIST=100000
 
 PROMPT='$(kube_ps1)'$PROMPT
 
+kubectl completion zsh > ~/.oh-my-zsh/cache/completions/_kubectl
+
 setopt EXTENDED_HISTORY
 compinit
